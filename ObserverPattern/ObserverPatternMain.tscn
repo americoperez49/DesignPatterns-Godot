@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ob0ulhj6r3w2"]
+
+[ext_resource type="Script" path="res://ObserverPattern/ObserverPatternMain.gd" id="1_oeoec"]
+[ext_resource type="PackedScene" uid="uid://cxfrl6cekpx50" path="res://BackButton/back_button.tscn" id="2_paqtm"]
+
+[node name="ObserverPatternMain" type="Node"]
+script = ExtResource("1_oeoec")
+
+[node name="BackButton" parent="." instance=ExtResource("2_paqtm")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 353.0
+offset_top = 95.0
+offset_right = 772.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 50
+text = "Observer Pattern
+"
