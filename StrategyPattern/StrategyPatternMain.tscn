@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://bf57guywcm6v6"]
+[gd_scene load_steps=3 format=3 uid="uid://bf57guywcm6v6"]
 
 [ext_resource type="Script" path="res://StrategyPattern/StrategyPatternMain.gd" id="1_o8q1f"]
+[ext_resource type="PackedScene" uid="uid://cxfrl6cekpx50" path="res://BackButton/back_button.tscn" id="2_3geab"]
 
 [node name="StrategyPatternMain" type="Node"]
 script = ExtResource("1_o8q1f")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 300.0
+offset_top = 36.0
+offset_right = 698.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 50
+text = "Strategy Pattern"
+
+[node name="BackButton" parent="." instance=ExtResource("2_3geab")]
