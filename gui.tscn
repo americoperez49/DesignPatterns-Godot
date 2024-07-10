@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://drgegfao85sy4"]
+
+[ext_resource type="Script" path="res://gui.gd" id="1_k7txw"]
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k7txw")
+
+[node name="StragetyPatternButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 154.0
+offset_right = 192.0
+offset_bottom = 185.0
+theme_override_font_sizes/font_size = 50
+text = "Strategy Pattern
+"
+
+[node name="ObserverPatternButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 627.0
+offset_top = 154.0
+offset_right = 1054.0
+offset_bottom = 231.0
+theme_override_font_sizes/font_size = 50
+text = "Observer Pattern
+"
+
+[connection signal="pressed" from="StragetyPatternButton" to="." method="_on_stragety_pattern_button_pressed"]
+[connection signal="pressed" from="ObserverPatternButton" to="." method="_on_observer_pattern_button_pressed"]
