@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxfrl6cekpx50"]
+
+[ext_resource type="Script" path="res://BackButton/back_button.gd" id="1_igxoy"]
+
+[node name="BackButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 50
+text = "Back"
+script = ExtResource("1_igxoy")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
